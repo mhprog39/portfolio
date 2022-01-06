@@ -1,0 +1,254 @@
+/* default styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+.bg-section {
+    background-color: #fff6f6;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+
+/* topb bar */
+
+#top-bar-container {
+    background-color: rgba(39, 45, 58, 1);
+}
+
+i.fab {
+    color: #ffffff;
+    margin: 2px;
+    font-size: 14px;
+}
+
+#new-album {
+    border-right: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#welcome-to-modohome {
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    margin: 5px;
+}
+
+#logo-wrapper img {
+    width: 150px;
+    float: right;
+}
+
+.input-group-text {
+    padding: 11px;
+}
+
+#search-from {
+    margin: 6px;
+}
+
+#icons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons-wrapper i {
+    font-size: 20px;
+}
+
+#fa-random-number {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 70%;
+    padding: 4px;
+    font-size: 10px;
+    position: relative;
+    bottom: 9px;
+    right: 10px;
+}
+
+#fa-heart-number {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 70%;
+    padding: 4px;
+    font-size: 10px;
+    position: relative;
+    bottom: 9px;
+    right: 10px;
+}
+
+
+/* hero */
+
+#hero-text-wrapper {
+    padding: 105px;
+}
+
+#hero-text-wrapper h2 {
+    color: #114639;
+    font-weight: 900;
+}
+
+#hero-text-wrapper #hero-contact-us {
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 3px solid #333333;
+    font-size: 14px;
+}
+
+#collectio-btns-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#collectio-btns-wrapper a {
+    margin: 8px;
+}
+
+
+/* albums section */
+
+#albums-second-section img.albums-second-section-img {
+    width: 70px;
+}
+
+#albums-second-section p {
+    font-weight: bold;
+}
+
+#albums-second-section a {
+    color: #333333;
+}
+
+#albums-second-section a:hover {
+    opacity: 0.7;
+}
+
+
+/* our productions */
+
+#our-productions-icons-wrapper .our-product-div img {
+    width: 30px;
+    margin-right: 4px;
+}
+
+#our-productions-icons-wrapper .our-product-div img#m19 {
+    margin-right: -19px;
+}
+
+#our-productions-icons-wrapper .our-product-div {
+    display: inline;
+    /* margin: 8px; */
+    opacity: 0.7;
+}
+
+#our-productions-icons-wrapper .our-product-div:hover {
+    opacity: 1;
+}
+
+#our-productions-icons-wrapper .our-product-div span {
+    position: relative;
+    top: 28px;
+    left: -49px;
+    font-size: 12px;
+    border-bottom: 2px solid #007add;
+    text-align: center;
+}
+
+#our-productions-icons-wrapper {
+    margin: 49px;
+}
+
+#collections-albums a {
+    color: #333333;
+    font-weight: bold;
+}
+
+#collections-albums a:hover {
+    opacity: 0.7;
+}
+
+#collections-albums img {
+    width: 250px;
+}
+
+.collection-album-price a {
+    display: block;
+}
+
+
+/* footer */
+
+#footer #footer-container {
+    padding: 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#footer #footer-row {
+    padding: 17px;
+}
+
+#footer #footer-row h4 {
+    font-size: 16px;
+}
+
+#footer #footer-row .footer-posts-box {
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 7px;
+}
+
+#footer #footer-row img {
+    width: 50px;
+}
+
+#footer #footer-row div#footer-logo-img-wrapper img#footer-logo-img {
+    width: 250px;
+}
+
+#footer #footer-row span {
+    font-size: 12px;
+}
+
+
+/* media query */
+
+@media screen and (max-width:760px) {
+    a#new-album {
+        display: none;
+    }
+    div#top-bar-container {
+        text-align: center;
+    }
+    p#welcome-to-modohome {
+        display: none;
+    }
+    .col-12.col-lg-2.our-product-div {
+        padding: 30px;
+    }
+}

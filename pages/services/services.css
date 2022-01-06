@@ -1,0 +1,236 @@
+/* default styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.mg31 {
+    margin: -31px;
+}
+
+.p0 {
+    padding: 0;
+}
+
+
+/* topb bar */
+
+#top-bar-container {
+    background-color: rgba(39, 45, 58, 1);
+}
+
+i.fab {
+    color: #ffffff;
+    margin: 2px;
+    font-size: 14px;
+}
+
+#new-album {
+    border-right: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#welcome-to-modohome {
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    margin: 5px;
+}
+
+#logo-wrapper img {
+    width: 150px;
+    float: right;
+}
+
+.input-group-text {
+    padding: 11px;
+}
+
+#search-from {
+    margin: 6px;
+}
+
+#icons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons-wrapper i {
+    font-size: 20px;
+}
+
+#fa-random-number {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 70%;
+    padding: 4px;
+    font-size: 10px;
+    position: relative;
+    bottom: 9px;
+    right: 10px;
+}
+
+#fa-heart-number {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 70%;
+    padding: 4px;
+    font-size: 10px;
+    position: relative;
+    bottom: 9px;
+    right: 10px;
+}
+
+
+/* section 2 */
+
+#section2-container div#section2-row {
+    background-color: #e0c387;
+    padding: 87px;
+}
+
+#s2-text {
+    text-align: center;
+    padding: 6px;
+    box-shadow: 2px 2px 68px #827a7a;
+    letter-spacing: 1px;
+}
+
+
+/* what we do  */
+
+#what-we-do-title {
+    color: #e0c387;
+    margin: 8px;
+}
+
+.fa.fa-star {
+    font-size: 50px;
+    color: #818A91;
+}
+
+.col-12.col-lg-6.p53 {
+    padding: 53px;
+}
+
+
+/* last section */
+
+#last-section-container #last-section-row {
+    background-color: #e0c387;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#last-section-container #last-section-row #last-section-text {
+    background: #ffffff;
+    color: #333333;
+    margin: 56px;
+    padding: 41px;
+    text-align: center;
+}
+
+#last-section-container #last-section-row #last-section-text img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+#last-section-container #last-section-row #last-section-text #stephen-geist {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #303030;
+    padding: 2px;
+}
+
+#last-section-container #last-section-row #last-section-text #last-section-artist {
+    font-size: 11px;
+    color: #e0c387;
+}
+
+
+/* footer */
+
+#footer #footer-container {
+    padding: 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#footer #footer-row {
+    padding: 17px;
+}
+
+#footer #footer-row h4 {
+    font-size: 16px;
+}
+
+#footer #footer-row .footer-posts-box {
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    padding: 7px;
+}
+
+#footer #footer-row img {
+    width: 50px;
+}
+
+#footer #footer-row div#footer-logo-img-wrapper img#footer-logo-img {
+    width: 250px;
+    margin: 8px;
+}
+
+#footer #footer-row span {
+    font-size: 12px;
+}
+
+
+/* media query */
+
+@media screen and (max-width:760px) {
+    a#new-album {
+        display: none;
+    }
+    div#top-bar-container {
+        text-align: center;
+    }
+    p#welcome-to-modohome {
+        display: none;
+    }
+}
+
+
+/* back to up icon */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #dddddd;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}

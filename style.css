@@ -1,0 +1,268 @@
+/* default styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    /* letter-spacing: 3px; */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.burger-container {
+    display: none;
+}
+
+.burger-container .burger {
+    margin: 14px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* meida query */
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    .res23 {
+        display: block !important;
+    }
+    .burger-container {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        color: #ffffff;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    z-index: 99999999999;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* slider */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide-caption {
+    margin-top: 267px;
+    margin-left: 89px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .slide.current h1 {
+    margin-bottom: 10px;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slide:first-child {
+    background: url('assets/img/Main-bannesrs/B-3402-copy.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('assets/img/Main-bannesrs/deliv.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(3) {
+    background: url('assets/img/Main-bannesrs/lethrA.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(4) {
+    background: url('assets/img/Main-bannesrs/menu.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(5) {
+    background: url('assets/img/Main-bannesrs/n2.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(2) {
+    background: url('assets/img/Main-bannesrs/n3.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(6) {
+    background: url('assets/img/Main-bannesrs/n5.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(7) {
+    background: url('assets/img/Main-bannesrs/type.jpg') no-repeat center top/cover;
+    ;
+}
+
+.slide:nth-child(8) {
+    background: url('assets/img/Main-bannesrs/zebu.jpg') no-repeat center top/cover;
+    ;
+}
+
+
+/* responsive sticky nav */
+
+#responsive-sticky-nav {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#responsive-sticky-nav a {
+    margin: 15px;
+    color: #333333;
+    text-decoration: none;
+}
+
+#responsive-sticky-nav a:hover {
+    opacity: 0.7;
+}
+
+#responsive-sticky-nav a span i {
+    font-size: 25px;
+    color: #333333;
+}
+
+#responsive-sticky-nav a span {
+    display: inherit;
+}
+
+#fav-icon {
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 4px;
+    font-size: 7px;
+}
+
+.res23 {
+    display: none;
+}
